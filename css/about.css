@@ -124,9 +124,13 @@ justify-content: center;
   gap: 2vw;
   font-size: 5vw;
   padding-right: 0;
-  
-
  }
+
+ .navigationMenu a:hover {
+   font-size: 5vw;
+  text-decoration: underline;
+  }
+  
 
  .nameLogo {
   display: flex;
