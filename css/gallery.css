@@ -49,18 +49,19 @@ body {
   font-size: 1.2vw; 
 }
 
+/*Link decoration*/
 .navigationMenu a {
   text-decoration: none;
   color: #27343E;
 }
 
+/* Underline and size up when hover*/
 .navigationMenu a:hover {
   font-size: 1.5vw;
   text-decoration: underline;
 }
 
 /* Footer */
-
 footer {
   display: flex;
   flex-direction: column;
@@ -76,34 +77,33 @@ footer {
 
 /*Gallery grid */
 
-.row {
+  .row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
 
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
+  /* Image columns */
+  .column {
+    -ms-flex: 33.33%;
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 4px;
+  }
 
-/* Сolumns next to each other */
-.column {
-  -ms-flex: 33.33%;
-  flex: 33.33%;
-  max-width: 33.33%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
+    .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
 
 
 /*Resposnive*/
 
 @media screen and (max-width: 800px) {
 
-.navigationBar {
+  .navigationBar {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -119,10 +119,13 @@ justify-content: center;
   gap: 2vw;
   font-size: 5vw;
   padding-right: 0;
-  
-
  }
 
+  .navigationMenu a:hover {
+  font-size: 5vw;
+  text-decoration: underline;
+}
+ 
  .nameLogo {
   display: flex;
 flex-direction: row;
@@ -130,10 +133,9 @@ align-items: center;
 font-size: 5vw; 
 gap: 2vw;
 padding-left: 0;
+ font-weight: 400;
 }
  
-
-  
   .column {
     -ms-flex: 50%;
     flex: 50%;

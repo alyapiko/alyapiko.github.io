@@ -1,8 +1,12 @@
 /*Home Page*/
 
-/* base */
+/* Base */
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Inter", sans-serif;
@@ -15,13 +19,13 @@ body {
 /* Header + Navigation */
 .navigationBar {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: start;
   size: 5rem;
   padding: 1rem;
   background-color: transparent;
   top: 0;
-  color: #F5F5F5 ;
+  color: #F5F5F5;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 150;
@@ -29,7 +33,7 @@ body {
 }
 
 
-/*Name logo on the right of the bar*/ 
+/*Name logo on the right of the bar*/
 .nameLogo {
   display: flex;
   flex-direction: column;
@@ -38,42 +42,39 @@ body {
   padding-left: 1rem;
   gap: 0rem;
   font-size: 2.5vw;
+
 }
 
-
-/*Navigation menu on the right of the bar*/ 
+/*Navigation menu on the right of the bar*/
 .navigationMenu ul {
   display: flex;
   flex-direction: column;
   padding-right: 1rem;
   gap: 0rem;
   list-style: none;
-  font-size: 1.2vw; /*whats this*/
+  font-size: 1.2vw;
 }
 
+/*Link decoration*/
 .navigationMenu a {
   text-decoration: none;
   color: #F5F5F5;
-
 }
 
-
-/*add hover and explain*/
+/*Underline and size up when hover*/ 
 .navigationMenu a:hover {
   font-size: 1.5vw;
   text-decoration: underline;
 }
 
-/*add active click style*/
 
 /* Footer */
-
 footer {
-    position:absolute;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-    font-size: x-small;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  font-size: x-small;
 }
 
 /*Main content*/
@@ -82,7 +83,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem; /*explain*/
+  padding: 2rem;
   background: #27343E;
   color: #F5F5F5;
   font-family: "Inter", sans-serif;
@@ -95,128 +96,128 @@ footer {
 /* Right side */
 
 .rightSide {
- 
   display: flex;
-  flex-direction: column;  
-  align-items: flex-start; 
+  flex-direction: column;
+  align-items: flex-start;
   width: 30%;
   height: auto;
   position: absolute;
-top: 18%;
-left: 65%;
-gap: 1rem;
+  top: 18%;
+  left: 65%;
+  gap: 1rem;
 }
 
-
 .homeImage {
-width: 70%;
+  width: 70%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.location {
+  position: relative;
+  left: 50%;
+
+}
+
+/*Left side*/
+.leftSide {
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  display: flex;
+  align-items: top;
+  gap: 8%;
+  width: 25%;
+}
+
+/* Hide in responsive */
+.arrow {
+  width: 70%;
+  height: auto;
+  cursor: pointer;
+}
+
+.oboePicture {
+  width: 60%;
   height: auto;
   border-radius: 8px;
 }
 
 
-.location {
-position: relative;
-left: 50%;
-
-}
-
-
-
-
-/*Left side*/
-
-.leftSide{
-  position: absolute;
-  top: 55%;     
-  left: 20%;
-  display: flex;
-  align-items: top;
-  gap: 8%;
-  width: 25%;          
-}
-
-.arrow {
-width: 70%;
-height: auto;
-cursor: pointer;
-}
-
-
-.oboePicture {
-width: 60%;
-height: auto;
-border-radius: 8px; 
-}
-
-/* contact info text */
+/* Contact info text */
 .homePageText {
-  position: absolute;   
+  position: absolute;
   top: 80%;
-  left: 50%;  
+  left: 50%;
   font-size: 0.9rem;
   line-height: 1.5;
 }
 
 
-  
-
-/* Backgound decorative name letters */
+/* Backgound decorative name letters, hide in responsive*/
 .backgroundText {
-
   position: absolute;
   left: 5%;
   top: 5%;
   font-family: "Inter", sans-serif;
   font-style: italic;
-  font-size: 20vw; 
+  font-size: 20vw;
   font-weight: 800;
   margin: 0;
   letter-spacing: 4px;
-
 }
- 
+
 
 /*Responsive*/
 
 @media (max-width: 800px) {
-.navigationBar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
- padding: 2rem;
- gap: 1rem;
- }
+  .navigationBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+  }
 
- .navigationMenu ul {
-  display: flex; 
-  flex-direction: row;
-justify-content: center;
-  gap: 2vw;
+  .navigationMenu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+    font-size: 5vw;
+    padding-right: 0;
+  }
+
+  .navigationMenu a {
+  text-decoration: none;
+  color: #F5F5F5;
+  }
+
+
+  .navigationMenu a:hover {
   font-size: 5vw;
-  padding-right: 0;
-  
+  text-decoration: underline;
+  }
 
- }
+  .nameLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 5vw;
+    gap: 2vw;
+    padding-left: 0;
+      font-weight: 400;
+  }
 
- .nameLogo {
-  display: flex;
-flex-direction: row;
-align-items: center;
-font-size: 5vw; 
-gap: 2vw;
-padding-left: 0;
-}
-
- .backgroundText {
-  display: none;
- }
+  .backgroundText {
+    display: none;
+  }
 
 
- footer {
-  display: none;
- }
+  footer {
+    display: none;
+  }
 
   .home {
     display: flex;
@@ -225,51 +226,56 @@ padding-left: 0;
     text-align: center;
   }
 
+
   .rightSide {
     position: static;
-    width: 100%;
+    width: 95%;
+    margin: 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-bottom: 1rem;
+    gap: 1rem;
+  }
+
+
+  .leftSide {
+    position: static;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
   }
 
   .location {
     position: static;
     width: 100%;
     text-align: center;
-    margin-bottom: 2rem;
-
+    margin-bottom: 1rem;
   }
 
-  .leftSide{
-    position: static;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1rem;
-  } 
-
- /* contact info text */
   .homePageText {
     position: static;
     width: 100%;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0 1rem;
   }
 
   .homeImage {
-    width: 80%;
+    width: 90%;
     height: auto;
     margin: 0 auto;
     display: block;
-
   }
 
-
   .oboePicture {
-    width: 80%;
+    width: 90%;
     height: auto;
     margin: 0 auto;
     display: block;
-
   }
 
   .arrow {
@@ -277,4 +283,3 @@ padding-left: 0;
   }
 
 }
-

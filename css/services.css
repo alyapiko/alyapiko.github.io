@@ -8,7 +8,7 @@ body {
   font-family: "Inter", sans-serif;
   color: #27343E;
   background: #F5F5F5;
-  line-height: 1.4; 
+  line-height: 1.4;
 }
 
 
@@ -31,13 +31,13 @@ body {
 
 /*Name logo on the right of the bar*/ 
 .nameLogo {
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-left: 1rem;
   gap: 0rem;
   font-size: 2.5vw;
+  font-weight: 400;
 }
 
 
@@ -51,21 +51,20 @@ body {
   font-size: 1.2vw; 
 }
 
+/*Link color, no underline*/
 .navigationMenu a {
   text-decoration: none;
   color: #27343E;
-
 }
 
 
-/*add hover and explain*/
+/*underline and size up when hover*/
 .navigationMenu a:hover {
   font-size: 1.5vw;
   text-decoration: underline;
 }
 
 /* Footer */
-
 footer {
   display: flex;
   flex-direction: column;
@@ -78,7 +77,6 @@ footer {
 }
 
 /*Main content*/
-
 .servicesHeader {
     display: flex;
     flex-direction: row;
@@ -92,13 +90,13 @@ footer {
     font-weight: 100;
 }
 
+/*four column container for services*/
 .servicesContainer {
 display: grid;
   grid-template-columns: 25% 25% 25% 25% ;
   grid-template-rows: 20rem;
   gap: 0rem;
   margin: 0rem 0rem;
-  
 }
 
 .servicesContainer > div {
@@ -119,12 +117,11 @@ h3 {
 }
 
 p {
-
   font-weight: 200;
 }
 
 
-
+/*Responsive*/
 
 @media (max-width: 800px) {
 
@@ -139,9 +136,12 @@ padding: 2rem;
 justify-content: flex-start;
   gap: 2vw;
   font-size: 5vw;
-  
-
  }
+
+ .navigationMenu a:hover {
+  font-size: 5vw;
+  text-decoration: underline;
+}
 
  .nameLogo {
   display: none;
