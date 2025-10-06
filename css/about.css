@@ -157,12 +157,17 @@ padding-left: 0;
   grid-row: 1;
 }
 
-.aboutText {
-margin-top: 1rem;
-padding: 0;
-grid-row: 2;
-margin-left: 0;
 
+.aboutText {
+  font-family: Inter, sans-serif;
+  font-weight: 300;
+  text-align: justify;
+  margin-left: 1rem;
+  margin-right: 1rem;
+padding: 1;
+grid-row: 2;
+gap: 2rem;
+color: #10161A;
 }
 
   
