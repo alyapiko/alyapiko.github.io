@@ -20,18 +20,11 @@ body {
 .navigationBar {
      display: flex;
      justify-content: space-between;
-     align-items: start;
-     size: 5rem;
+     align-items: flex-start;
      padding: 1rem;
      background-color: transparent;
-     top: 0;
-     color: #27343E;
-     font-family: "Inter", sans-serif;
-     font-optical-sizing: auto;
-     font-weight: 150;
-     font-style: normal;
+     font-weight: 200;
 }
-
 
 /*Name logo on the left of the bar*/
 
@@ -40,7 +33,6 @@ body {
      flex-direction: column;
      justify-content: flex-start;
      padding-left: 1rem;
-     gap: 0rem;
      font-size: 2.5vw;
 }
 
@@ -51,7 +43,6 @@ body {
      display: flex;
      flex-direction: column;
      padding-right: 1rem;
-     gap: 0rem;
      list-style: none;
      font-size: 1.2vw;
 }

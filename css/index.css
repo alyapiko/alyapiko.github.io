@@ -23,8 +23,7 @@ body {
   align-items: start;
   padding: 1rem;
   background-color: transparent;
-  top: 0;
-  font-weight: 150;
+  font-weight: 200;
 }
 
 /*Name logo on the right of the bar*/
@@ -116,6 +115,7 @@ footer {
   left: 20%;
   display: flex;
   align-items: flex-start;
+  margin-top: 1%;
   gap: 8%;
   width: 25%;
 }
@@ -124,7 +124,7 @@ footer {
 .arrow {
   width: 70%;
   height: auto;
-  cursor: pointer; /* creates a pointer cursor, when we hover over the 'arrow' */
+  cursor: pointer; 
 }
 
 .oboePicture {

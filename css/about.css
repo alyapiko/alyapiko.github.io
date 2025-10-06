@@ -15,16 +15,10 @@ body {
 .navigationBar {
   display: flex;
   justify-content: space-between; 
-  align-items: start;
-  size: 5rem;
+  align-items: flex-start;
   padding: 1rem;
   background-color: transparent;
-  top: 0;
-  color: #27343E ;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 150;
-  font-style: normal;
+  font-weight: 200;
 }
 
 
@@ -34,7 +28,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   padding-left: 1rem;
-  gap: 0rem;
   font-size: 2.5vw;
 }
 
@@ -44,7 +37,6 @@ body {
   display: flex;
   flex-direction: column;
   padding-right: 1rem;
-  gap: 0rem;
   list-style: none;
   font-size: 1.2vw;
 }
@@ -52,14 +44,12 @@ body {
 .navigationMenu a {
   text-decoration: none;
   color: #27343E;
-
 }
 
 .navigationMenu a:hover {
   font-size: 1.5vw;
   text-decoration: underline;
 } 
-
 
 .about {
   display: grid;
@@ -68,20 +58,13 @@ body {
 column-gap: 2%;
 }
 
-.h2 {
-  font-weight: 200;
-  size: 8vw;
-}
-
-
 .aboutText {
-  font-family: Inter, sans-serif;
   font-weight: 300;
   text-align: justify;
   font-size: large;
-margin-left: 2rem;
-gap: 2rem;
-color: #10161A;
+  margin-left: 2rem;
+  gap: 2rem;
+  color: #10161A;
 }
 
 .aboutMePhoto {
@@ -89,7 +72,7 @@ width: 100%;
 height: auto;
 margin-right: 2rem;
 border-radius: 1rem;
-overflow: hidden;
+overflow: hidden; 
 }
 
 
@@ -98,12 +81,12 @@ overflow: hidden;
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
-    width: 100%;
-    text-align: center;
-    font-size: x-small;
-    padding: 2rem;
+  width: 100%;
+  text-align: center;
+  font-size: x-small;
+  padding: 2rem;
 }
 
 
@@ -159,17 +142,14 @@ padding-left: 0;
   grid-row: 1;
 }
 
-
 .aboutText {
-  font-family: Inter, sans-serif;
   font-weight: 300;
   text-align: justify;
   margin-left: 1rem;
   margin-right: 1rem;
-padding: 1;
-grid-row: 2;
-gap: 2rem;
-color: #10161A;
+  padding: 1rem;
+  grid-row: 2;
+  color: #10161A;
 }
 
   

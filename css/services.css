@@ -1,6 +1,6 @@
 /* Services page */
 
-/* base */
+/* Base */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -16,16 +16,10 @@ body {
 .navigationBar {
   display: flex;
   justify-content: space-between; 
-  align-items: start;
-  size: 5rem;
+  align-items: flex-start;
   padding: 1rem;
   background-color: transparent;
-  top: 0;
-  color: #27343E ;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 150;
-  font-style: normal;
+  font-weight: 200;
 }
 
 
@@ -35,7 +29,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   padding-left: 1rem;
-  gap: 0rem;
   font-size: 2.5vw;
   font-weight: 400;
 }
@@ -46,7 +39,6 @@ body {
   display: flex;
   flex-direction: column;
   padding-right: 1rem;
-  gap: 0rem;
   list-style: none;
   font-size: 1.2vw; 
 }
@@ -68,12 +60,11 @@ body {
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
-    width: 100%;
-    text-align: center;
-    font-size: x-small;
-    padding: 2rem;
+  text-align: center;
+  font-size: x-small;
+  padding: 2rem;
 }
 
 /*Main content*/
@@ -95,8 +86,6 @@ footer {
 display: grid;
   grid-template-columns: 25% 25% 25% 25% ;
   grid-template-rows: 20rem;
-  gap: 0rem;
-  margin: 0rem 0rem;
 }
 
 .servicesContainer > div {
@@ -105,7 +94,6 @@ display: grid;
   padding: 2rem 2rem;
   font-size: 1rem;
   text-align: left;
-  gap: 20%;
 }
 
 h2 {
@@ -113,11 +101,11 @@ font-weight: 700;
 }
 
 h3 {
-  font-weight: 400;
+font-weight: 400;
 }
 
 p {
-  font-weight: 200;
+font-weight: 200;
 }
 
 
@@ -126,22 +114,16 @@ p {
 @media (max-width: 800px) {
 
   .navigationBar {
-
 padding: 2rem;
  }
 
  .navigationMenu ul {
   display: flex; 
   flex-direction: row;
-justify-content: flex-start;
+  justify-content: flex-start;
   gap: 2vw;
   font-size: 5vw;
  }
-
-  .navigationMenu a {
-  text-decoration: none;
-  color: #27343E;
-  }
 
   .navigationMenu a:hover {
   font-size: 5vw;
@@ -152,10 +134,6 @@ justify-content: flex-start;
   display: none;
  }
 
- .backgroundText {
-  display: none;
- }
-
 .servicesHeader {
   display: flex;
   justify-content: flex-start;
@@ -163,11 +141,10 @@ justify-content: flex-start;
 }
 
 .servicesContainer {
-display: grid;
-width: 100%;
-grid-template-rows: 25% 25% 25% 25% ;
-grid-template-columns: 100%;
-
+  display: grid;
+  width: 100%;
+  grid-template-rows: 25% 25% 25% 25% ;
+  grid-template-columns: 100%;
 }
 
 }
