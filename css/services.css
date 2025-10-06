@@ -138,10 +138,16 @@ justify-content: flex-start;
   font-size: 5vw;
  }
 
- .navigationMenu a:hover {
+  .navigationMenu a {
+  text-decoration: none;
+  color: #27343E;
+  }
+
+
+  .navigationMenu a:hover {
   font-size: 5vw;
   text-decoration: underline;
-}
+  }
 
  .nameLogo {
   display: none;
