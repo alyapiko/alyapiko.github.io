@@ -21,28 +21,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  size: 5rem;
   padding: 1rem;
   background-color: transparent;
   top: 0;
-  color: #F5F5F5;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 150;
-  font-style: normal;
 }
-
 
 /*Name logo on the right of the bar*/
 .nameLogo {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  justify-content: flex-start;
-  padding-left: 1rem;
+  padding-left: 1rem;   /* Rem is relative to default size */   
   gap: 0rem;
-  font-size: 2.5vw;
-
+  font-size: 2.5vw; /* vw is even to 1 % of the current width */
 }
 
 /*Navigation menu on the right of the bar*/
@@ -51,17 +43,19 @@ body {
   flex-direction: column;
   padding-right: 1rem;
   gap: 0rem;
-  list-style: none;
+  list-style: none; /* without any decoration */
   font-size: 1.2vw;
 }
 
 /*Link decoration*/
+
 .navigationMenu a {
   text-decoration: none;
   color: #F5F5F5;
 }
 
 /*Underline and size up when hover*/ 
+
 .navigationMenu a:hover {
   font-size: 1.5vw;
   text-decoration: underline;
@@ -69,8 +63,9 @@ body {
 
 
 /* Footer */
+
 footer {
-  position: absolute;
+  position: absolute; /* Sticking to the bottom of the page */
   width: 100%;
   bottom: 0;
   text-align: center;
@@ -84,14 +79,8 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background: #27343E;
-  color: #F5F5F5;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 300;
-  font-style: normal;
 }
-
 
 /* Right side */
 
@@ -107,16 +96,17 @@ footer {
   gap: 1rem;
 }
 
+/*  Main image  */
 .homeImage {
   width: 70%;
   height: auto;
   border-radius: 8px;
 }
 
+/* 'Based in helsinki' */
 .location {
-  position: relative;
+  position: relative; /* This causes location text to change its position based on original position */
   left: 50%;
-
 }
 
 /*Left side*/
@@ -125,7 +115,7 @@ footer {
   top: 55%;
   left: 20%;
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   gap: 8%;
   width: 25%;
 }
@@ -134,7 +124,7 @@ footer {
 .arrow {
   width: 70%;
   height: auto;
-  cursor: pointer;
+  cursor: pointer; /* creates a pointer cursor, when we hover over the 'arrow' */
 }
 
 .oboePicture {
@@ -142,7 +132,6 @@ footer {
   height: auto;
   border-radius: 8px;
 }
-
 
 /* Contact info text */
 .homePageText {
@@ -164,13 +153,14 @@ footer {
   font-size: 20vw;
   font-weight: 800;
   margin: 0;
-  letter-spacing: 4px;
+  letter-spacing: 0.25rem;
 }
 
 
 /*Responsive*/
 
 @media (max-width: 800px) {
+
   .navigationBar {
     display: flex;
     flex-direction: column;
@@ -190,14 +180,14 @@ footer {
   }
 
   .navigationMenu a {
-  text-decoration: none;
-  color: #F5F5F5;
+    text-decoration: none;
+    color: #F5F5F5;
   }
 
 
   .navigationMenu a:hover {
-  font-size: 5vw;
-  text-decoration: underline;
+    font-size: 5vw;
+    text-decoration: underline;
   }
 
   .nameLogo {
@@ -207,16 +197,7 @@ footer {
     font-size: 5vw;
     gap: 2vw;
     padding-left: 0;
-      font-weight: 400;
-  }
-
-  .backgroundText {
-    display: none;
-  }
-
-
-  footer {
-    display: none;
+    font-weight: 400;
   }
 
   .home {
@@ -228,9 +209,8 @@ footer {
 
 
   .rightSide {
-    position: static;
+    position: static; /* Static means not affected by left or right properties */
     width: 95%;
-    margin: 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -241,8 +221,7 @@ footer {
 
   .leftSide {
     position: static;
-    width: 90%;
-    margin: 0 auto;
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,31 +233,39 @@ footer {
     position: static;
     width: 100%;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; 
   }
 
   .homePageText {
     position: static;
     width: 100%;
     text-align: center;
-    margin-bottom: 0 1rem;
+    margin-bottom: 1rem;
   }
 
   .homeImage {
     width: 90%;
     height: auto;
-    margin: 0 auto;
-    display: block;
+    display: block; /* to take up full width */
   }
 
   .oboePicture {
     width: 90%;
     height: auto;
-    margin: 0 auto;
     display: block;
   }
 
+  /* NOT displaying */
+  
   .arrow {
+    display: none;
+  }
+  
+  .backgroundText {
+    display: none;
+  }
+
+  footer {
     display: none;
   }
 
