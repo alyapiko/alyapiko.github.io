@@ -1,0 +1,165 @@
+/* base */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #27343E;
+  background: #F5F5F5;
+  line-height: 1.4;
+}
+
+
+.navigationBar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: start;
+  size: 5rem;
+  padding: 1rem;
+  background-color: transparent;
+  top: 0;
+  color: #27343E ;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 150;
+  font-style: normal;
+}
+
+
+/*Name logo on the right of the bar*/ 
+.nameLogo {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  gap: 0rem;
+  font-size: 2.5vw;
+}
+
+
+/*Navigation menu on the right of the bar*/ 
+.navigationMenu ul {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+  gap: 0rem;
+  list-style: none;
+  font-size: 1.2vw;
+}
+
+.navigationMenu a {
+  text-decoration: none;
+  color: #27343E;
+
+}
+
+.navigationMenu a:hover {
+  font-size: 1.5vw;
+  text-decoration: underline;
+} 
+
+
+.about {
+  display: grid;
+  grid-template-columns: 46% 52% ;
+  grid-template-rows: 100% ;
+column-gap: 2%;
+}
+
+.h2 {
+  font-weight: 200;
+  size: 8vw;
+}
+
+
+.aboutText {
+  font-family: Inter, sans-serif;
+  font-weight: 300;
+  text-align: justify;
+  font-size: x-large;
+margin-left: 2rem;
+gap: 2rem;
+color: #10161A;
+}
+
+.aboutMePhoto {
+width: 100%;
+height: auto;
+margin-right: 2rem;
+border-radius: 1rem;
+}
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+    width: 100%;
+    text-align: center;
+    font-size: x-small;
+    padding: 2rem;
+}
+
+
+
+@media (max-width: 900px) {
+
+  .navigationBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ padding: 2rem;
+ gap: 1rem;
+ }
+
+ .navigationMenu ul {
+  display: flex; 
+  flex-direction: row;
+justify-content: center;
+  gap: 2vw;
+  font-size: 5vw;
+  padding-right: 0;
+  
+
+ }
+
+ .nameLogo {
+  display: flex;
+flex-direction: row;
+align-items: center;
+font-size: 5vw; 
+gap: 2vw;
+padding-left: 0;
+}
+ 
+   .about {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    text-align: center;
+    gap: 0; 
+  }
+
+  .aboutMePhoto {
+  margin-top: 0;
+   order: 1;
+   width: 100%;
+ 
+   object-fit: cover;
+   border-radius: 1rem;
+   grid-row: 1;
+}
+
+  .aboutText {
+    margin-top: 1rem;
+    padding: 0;
+    grid-row: 2;
+  margin-left: 0;
+  }
+
+  
+}
